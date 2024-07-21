@@ -2,8 +2,11 @@ import { defineUserConfig } from "vuepress";
 
 import theme from "./theme.js";
 
+// 从环境变量中获取 BASE_URL，默认为 "/"
+const base = (process.env.BASE_URL || "/") as "/" | `/${string}/`;
+
 export default defineUserConfig({
-  base: "/test.github.io/",
+  base,
   dest: "src/.vuepress/dist",
 
   lang: "zh-CN",
