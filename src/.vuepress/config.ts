@@ -3,7 +3,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  // base: "/test.github.io/",
+  base: "/test.github.io/",
   dest: "src/.vuepress/dist",
 
   lang: "zh-CN",
